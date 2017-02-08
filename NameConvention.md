@@ -40,7 +40,7 @@ Naming conventions for selector states:
 
 ## 2.2 Layout File 
 
-
+<WHAT>_<WHERE>.XML
 | Prefix          |  Usage             |
 | ---------------- | ---------------------- | 
 | activity         | contentview for activity  | 
@@ -50,7 +50,7 @@ Naming conventions for selector states:
 |  layout    | layout reused using the include tag |
 |  dialog    | view for dialog  |
 
-	
+Example
 ```java
 activity_main: content view of the MainActivity
 fragment_articledetail: view for the ArticleDetailFragment
