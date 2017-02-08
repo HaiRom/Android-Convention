@@ -41,7 +41,7 @@ Naming conventions for selector states:
 ## 2.2 Layout File 
 
 
-| Prefix        |  Usage             |
+| Prefix          |  Usage             |
 | ---------------- | ---------------------- | 
 | activity         | contentview for activity  | 
 | fragment         |view for a fragment   | 
@@ -51,13 +51,13 @@ Naming conventions for selector states:
 |  dialog    | view for dialog  |
 
 	
-	
-	activity_main: content view of the MainActivity
+```java
+activity_main: content view of the MainActivity
 fragment_articledetail: view for the ArticleDetailFragment
 view_menu: layout inflated by custom view class MenuView
 item_article: list item in ArticleRecyclerView
 layout_actionbar_backbutton: layout for an actionbar with a backbutton (too simple to be a customview)
-	
+```
 	
 
 ## 2.3 Menu File
