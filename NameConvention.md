@@ -39,8 +39,7 @@ Naming conventions for selector states:
 | Selected     | `_selected`     | `btn_order_selected.9.png`  |
 
 ## 2.2 Layout File 
-
-<WHAT>_<WHERE>.XML
+ WHAT_WHERE.XML
 | Prefix          |  Usage             |
 | ---------------- | ---------------------- | 
 | activity         | contentview for activity  | 
