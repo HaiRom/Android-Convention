@@ -1,7 +1,5 @@
 # 1. Class File
-
 Class names are written in [UpperCase]
-
 # 2. Resource File
 Resources file names are written in __lowercase_underscore__.
 ## 2.1 Drawable File
