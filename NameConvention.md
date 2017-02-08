@@ -1,21 +1,22 @@
 # 1. Class File
 
+Class names are written in [UpperCase]
+
 # 2. Resource File
 Resources file names are written in __lowercase_underscore__.
 ## 2.1 Drawable File
 Naming conventions for drawables:
 
 
-| Asset Type   | Prefix            |		Example               |
+| Type         | Prefix            |		Example          |
 |--------------| ------------------|-----------------------------|
-| Action bar   | `ab_`             | `ab_stacked.9.png`          |
-| Button       | `btn_`	            | `btn_send_pressed.9.png`    |
-| Dialog       | `dialog_`         | `dialog_top.9.png`          |
-| Divider      | `divider_`        | `divider_horizontal.9.png`  |
+| Button       | `btn_`	            | `btn_send_pressed.png`    |
+| Dialog       | `dialog_`         | `dialog_top.png`          |
+| Divider      | `divider_`        | `divider_horizontal.png`  |
 | Icon         | `ic_`	            | `ic_star.png`               |
-| Menu         | `menu_	`           | `menu_submenu_bg.9.png`     |
-| Notification | `notification_`	| `notification_bg.9.png`     |
-| Tabs         | `tab_`            | `tab_pressed.9.png`         |
+| Menu         | `menu_	`           | `menu_submenu_bg.png`     |
+| Notification | `notification_`	| `notification_bg.png`     |
+| Tabs         | `tab_`            | `tab_pressed.png`         |
 
 Naming conventions for icons (taken from [Android iconography guidelines](http://developer.android.com/design/style/iconography.html)):
 
@@ -32,14 +33,15 @@ Naming conventions for selector states:
 
 | State	       | Suffix          | Example                     |
 |--------------|-----------------|-----------------------------|
-| Normal       | `_normal`       | `btn_order_normal.9.png`    |
-| Pressed      | `_pressed`      | `btn_order_pressed.9.png`   |
-| Focused      | `_focused`      | `btn_order_focused.9.png`   |
-| Disabled     | `_disabled`     | `btn_order_disabled.9.png`  |
-| Selected     | `_selected`     | `btn_order_selected.9.png`  |
+| Normal       | `_normal`       | `btn_order_normal.png`    |
+| Pressed      | `_pressed`      | `btn_order_pressed.png`   |
+| Focused      | `_focused`      | `btn_order_focused.png`   |
+| Disabled     | `_disabled`     | `btn_order_disabled.png`  |
+| Selected     | `_selected`     | `btn_order_selected.png`  |
 
 ## 2.2 Layout File 
 
+   WHAT_WHERE.XML
 
 | Prefix           |  Usage                                 |
 | ---------------- | ----------------------                 | 
@@ -156,3 +158,11 @@ IDs should be prefixed with the name of the element in lowercase underscore. For
 | `EditText`               | `edt_`             |
 
 reused using the include tag
+
+### 4.2.2 Attributes ordering
+
+As a general rule you should try to group similar attributes together. A good way of ordering the most common attributes is:
+
+ Id is on top
+ Style is at bottom
+ 
