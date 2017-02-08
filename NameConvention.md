@@ -41,13 +41,24 @@ Naming conventions for selector states:
 ## 2.2 Layout File 
 
 
-| Component        | Class Name             | Layout Name                   |
-| ---------------- | ---------------------- | ----------------------------- |
-| Activity         | `UserProfileActivity`  | `activity_user_profile.xml`   |
-| Fragment         | `SignUpFragment`       | `fragment_sign_up.xml`        |
-| Dialog           | `ChangePasswordDialog` | `dialog_change_password.xml`  |
-| AdapterView item | ---                    | `item_person.xml`             |
-| Partial layout   | ---                    | `partial_stats_bar.xml`       |
+| Prefix        |  Usage             |
+| ---------------- | ---------------------- | 
+| activity         | contentview for activity  | 
+| fragment         |view for a fragment   | 
+| view           | inflated by a custom view | 
+| item         |  layout used in list/recycler/gridview | 
+|  layout    | layout reused using the include tag |
+|  dialog    | view for dialog  |
+
+	
+	
+	activity_main: content view of the MainActivity
+fragment_articledetail: view for the ArticleDetailFragment
+view_menu: layout inflated by custom view class MenuView
+item_article: list item in ArticleRecyclerView
+layout_actionbar_backbutton: layout for an actionbar with a backbutton (too simple to be a customview)
+	
+	
 
 ## 2.3 Menu File
 Similar to layout files, menu files should match the name of the component. For example, if we are defining a menu file that is going to be used in the `UserActivity`, then the name of the file should be `activity_user.xml`
@@ -59,7 +70,7 @@ Resource files in the values folder should be __plural__, e.g. `strings.xml`, `s
 
 ## 2.5 Raw,Xml,Anim,Animator File
 
-# 3 Java Code Style
+# 3. Java Code Style
 
 ## 3.1 Fields definition and naming
 
@@ -100,7 +111,47 @@ When using one of these components, you __must__ define the keys as a `static fi
 | Intent Action      | `ACTION_`           |
 
 
-# 4 Xml Code Style
+# 4. Xml Code Style
+## 4.1 Use self closing tags
 
+When an XML element doesn't have any contents, you __must__ use self closing tags.
 
+This is good:
 
+```xml
+<TextView
+	android:id="@+id/text_view_profile"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+```
+
+This is __bad__ :
+
+```xml
+<!-- Don\'t do this! -->
+<TextView
+    android:id="@+id/text_view_profile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+</TextView>
+```
+
+## 4.2 Resources naming
+
+Resource IDs and names are written in __lowercase_underscore__.
+
+### 4.2.1 ID naming
+IDs should be prefixed with the name of the element in lowercase underscore. For example:
+
+| Element            | Prefix            |
+| -----------------  | ----------------- |
+| `TextView`           | `tv_`             |
+| `ImageView`          | `img_`            |
+| `Button`             | `btn_`           |
+| `Menu`               | `menu_`             |
+| `LinearLayout`               | `ll_`             |
+| `RelativeLayout`               | `rl_`             |
+| `FrameLayout`               | `fr_`             |
+| `EditText`               | `edt_`             |
+
+reused using the include tag
