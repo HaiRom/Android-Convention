@@ -51,6 +51,7 @@ Naming conventions for selector states:
 |  dialog          | view for dialog                        |
 
 Example
+
 ```java
 activity_main: content view of the MainActivity
 fragment_articledetail: view for the ArticleDetailFragment
