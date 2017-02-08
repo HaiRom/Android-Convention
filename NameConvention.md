@@ -57,9 +57,50 @@ A good practice is to not include the word `menu` as part of the name because th
 ## 2.4 Values File
 Resource files in the values folder should be __plural__, e.g. `strings.xml`, `styles.xml`, `colors.xml`, `dimens.xml`, `attrs.xml`
 
-## 2.5 Raw File
+## 2.5 Raw,Xml,Anim,Animator File
 
-## 2.6 Xml File
+# 3 Java Code Style
 
-## 2.7 
+## 3.1 Fields definition and naming
+
+Fields should be defined at the __top of the file__ and they should follow the naming rules listed below.
+
+* Private, non-static field names start with __m__.
+* Private, static field names start with __s__.
+* Other fields start with a lower case letter.
+* Static final fields (constants) are ALL_CAPS_WITH_UNDERSCORES.
+
+Example:
+
+```java
+public class MyClass {
+    public static final int SOME_CONSTANT = 42;
+    public int publicField;
+    private static MyClass sSingleton;
+    int mPackagePrivate;
+    private int mPrivate;
+    protected int mProtected;
+}
+```
+
+## 3.2 Logcat 
+ private final String TAG = "CompletedDeliveryAtv";
+ Logger.d("TAG:" + TAG, message);
+
+## 3.3 String constants, naming, and values 
+
+When using one of these components, you __must__ define the keys as a `static final` fields and they should be prefixed as indicated below.
+
+| Element            | Field Name Prefix |
+| -----------------  | ----------------- |
+| SharedPreferences  | `PREF_`             |
+| Bundle             | `BUNDLE_`           |
+| Fragment Arguments | `ARGUMENT_`         |
+| Intent Extra       | `EXTRA_`            |
+| Intent Action      | `ACTION_`           |
+
+
+# 4 Xml Code Style
+
+
 
