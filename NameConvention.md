@@ -39,15 +39,16 @@ Naming conventions for selector states:
 | Selected     | `_selected`     | `btn_order_selected.9.png`  |
 
 ## 2.2 Layout File 
- WHAT_WHERE.XML
-| Prefix          |  Usage             |
-| ---------------- | ---------------------- | 
-| activity         | contentview for activity  | 
-| fragment         |view for a fragment   | 
-| view           | inflated by a custom view | 
-| item         |  layout used in list/recycler/gridview | 
-|  layout    | layout reused using the include tag |
-|  dialog    | view for dialog  |
+
+
+| Prefix           |  Usage                                 |
+| ---------------- | ----------------------                 | 
+| activity         | contentview for activity               | 
+| fragment         |view for a fragment                     | 
+| view             | inflated by a custom view              | 
+| item             |  layout used in list/recycler/gridview | 
+|  layout          | layout reused using the include tag    |
+|  dialog          | view for dialog                        |
 
 Example
 ```java
