@@ -157,6 +157,7 @@ IDs should be prefixed with the name of the element in lowercase underscore. For
 
 reused using the include tag
 
+
 ### 4.2.2 Attributes ordering
 
 As a general rule you should try to group similar attributes together. A good way of ordering the most common attributes is:
