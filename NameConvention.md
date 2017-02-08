@@ -142,6 +142,7 @@ This is __bad__ :
 Resource IDs and names are written in __lowercase_underscore__.
 
 ### 4.2.1 ID naming
+
 IDs should be prefixed with the name of the element in lowercase underscore. For example:
 
 | Element            | Prefix            |
@@ -154,8 +155,6 @@ IDs should be prefixed with the name of the element in lowercase underscore. For
 | `RelativeLayout`               | `rl_`             |
 | `FrameLayout`               | `fr_`             |
 | `EditText`               | `edt_`             |
-
-reused using the include tag
 
 
 ### 4.2.2 Attributes ordering
